@@ -62,12 +62,12 @@ const Navbar = () => {
                     <IoMdAdd className='text-xl' /> {` `} <span className='hidden md:block'>Upload</span>
                   </button>
                 </Link>
-                {userProfile.image && (
-                 <Link href={`/profile/${userProfile._id}`}>
+                {user?.image && (
+                 <Link href={`/profile/${user._id}`}>
                 <div>
                   <Image
                     className='rounded-full cursor-pointer'
-                    src={userProfile.image}
+                    src={user.image}
                     alt='user'
                     width={40}
                     height={40}
